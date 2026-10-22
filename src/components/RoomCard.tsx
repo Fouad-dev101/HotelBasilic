@@ -3,23 +3,21 @@ import type { Room } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useBooking } from '../context/BookingContext';
 
-export default function RoomCard({
-  room,
-  index,
-}: {
-  room: Room;
-  index: number;
-}) {
+export default function RoomCard({ room, index }: { room: Room; index: number }) {
   const { locale, t } = useLanguage();
   const { requestRoom } = useBooking();
-  const reverse = index % 2 === 1;
+
+  // Alternate layout styles: 0 = wide image left, 1 = wide image right, 2 = centered focus
+  const layoutType = index % 3;
+  const isReversed = layoutType === 1;
 
   return (
-    <article className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
+    <article className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
+      {/* Image container */}
       <div
         className={`group relative overflow-hidden bg-stone lg:col-span-7 ${
-          reverse ? 'lg:order-2' : ''
-        }`}
+          isReversed ? 'lg:order-2' : ''
+        } ${layoutType === 2 ? 'lg:col-span-12 lg:max-w-5xl lg:mx-auto' : ''}`}
       >
         <div className="reveal-img aspect-[4/5] overflow-hidden sm:aspect-[16/11] lg:aspect-[4/3]">
           <img
@@ -29,68 +27,56 @@ export default function RoomCard({
             height={1050}
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover transition-transform duration-[1.2s] ease-lux group-hover:scale-[1.03]"
+            className="h-full w-full object-cover transition-transform duration-[1.4s] ease-lux group-hover:scale-[1.04]"
           />
         </div>
-        <span className="absolute left-5 top-5 flex h-11 w-11 items-center justify-center border border-ivory/40 bg-navy/25 font-serif text-sm text-ivory backdrop-blur-sm">
+        <span className="absolute left-6 top-6 flex h-12 w-12 items-center justify-center border border-ivory/40 bg-navy/30 font-serif text-base text-ivory backdrop-blur-sm">
           {room.index}
         </span>
       </div>
 
-      <div className={`lg:col-span-5 ${reverse ? 'lg:order-1 lg:pr-6' : 'lg:pl-6'}`}>
+      {/* Text content */}
+      <div
+        className={`lg:col-span-5 ${
+          isReversed ? 'lg:order-1 lg:pr-8' : 'lg:pl-8'
+        } ${layoutType === 2 ? 'lg:col-span-12 lg:max-w-3xl lg:mx-auto lg:text-center' : ''}`}
+      >
         <div className="reveal flex items-center gap-4">
-          <span className="h-px w-8 bg-champagne" aria-hidden="true" />
+          <span className={`h-px w-10 bg-champagne ${layoutType === 2 ? 'hidden' : ''}`} />
           <p className="eyebrow">{room.tagline[locale]}</p>
         </div>
 
         <h3
-          className="reveal mt-5 font-serif text-[clamp(2rem,3.4vw,3.2rem)] font-light leading-[1.05] text-navy"
-          style={{ transitionDelay: '60ms' }}
+          className="reveal mt-6 font-serif text-[clamp(2.2rem,4vw,3.5rem)] font-light leading-[1.05] text-navy"
+          style={{ transitionDelay: '80ms' }}
         >
           {room.name[locale]}
         </h3>
 
         <p
-          className="reveal mt-5 max-w-md text-[0.93rem] leading-relaxed text-charcoal/65"
-          style={{ transitionDelay: '120ms' }}
+          className="reveal mt-6 max-w-md text-[1.05rem] leading-relaxed text-charcoal/70"
+          style={{ transitionDelay: '160ms' }}
         >
           {room.description[locale]}
         </p>
 
-        <div className="reveal mt-7" style={{ transitionDelay: '180ms' }}>
-          <p className="label text-[0.58rem] text-charcoal/40">
-            {t.rooms.features}
-          </p>
-          <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
+        <div className="reveal mt-8" style={{ transitionDelay: '240ms' }}>
+          <p className="label text-[0.6rem] text-charcoal/40">{t.rooms.features}</p>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
             {room.features.map((feature) => (
-              <li
-                key={feature[locale]}
-                className="flex items-center gap-2.5 text-[0.82rem] text-charcoal/70"
-              >
-                <Check
-                  size={12}
-                  strokeWidth={1.8}
-                  className="shrink-0 text-champagne"
-                  aria-hidden="true"
-                />
+              <li key={feature[locale]} className="flex items-center gap-3 text-[0.9rem] text-charcoal/75">
+                <Check size={14} strokeWidth={1.8} className="shrink-0 text-champagne" />
                 {feature[locale]}
               </li>
             ))}
           </ul>
         </div>
 
-        <div
-          className="reveal mt-8 flex flex-wrap items-center gap-5"
-          style={{ transitionDelay: '240ms' }}
-        >
-          <button
-            type="button"
-            onClick={() => requestRoom(room.id)}
-            className="btn btn-dark"
-          >
+        <div className="reveal mt-10 flex flex-wrap items-center gap-6" style={{ transitionDelay: '320ms' }}>
+          <button type="button" onClick={() => requestRoom(room.id)} className="btn btn-dark">
             {t.rooms.inquire}
           </button>
-          <span className="text-[0.68rem] uppercase tracking-[0.18em] text-charcoal/40">
+          <span className="text-[0.75rem] uppercase tracking-[0.2em] text-charcoal/40">
             {t.rooms.priceOnRequest}
           </span>
         </div>
