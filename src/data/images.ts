@@ -1,28 +1,19 @@
-/**
- * Centralised image configuration.
- * Real hotel photos are integrated, with premium Unsplash placeholders for remaining categories.
- */
 export const IMAGES = {
-  // Hero & Intro
   hero: '/images/hotel-exterior.jpg',
   intro: '/images/hotel-exterior.jpg',
   introDetail: '/images/hotel-room.jpg',
   
-  // Rooms
   roomClassic: '/images/hotel-room.jpg',
   roomSuperior: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1400&q=80',
   roomSuite: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1400&q=80',
   
-  // Dining
   diningRestaurant: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80',
   diningPastry: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=80',
   diningCoffee: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80',
   
-  // Destination
   destinationCoast: '/images/plaza.jpg',
   destinationBeach: '/images/al-hoceima.jpg',
   
-  // Gallery
   galleryExterior: '/images/hotel-exterior.jpg',
   galleryLobby: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80',
   galleryRoom: '/images/hotel-room.jpg',
