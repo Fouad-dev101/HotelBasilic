@@ -3,8 +3,8 @@ import { IMAGES } from './images';
 
 /**
  * Accommodation categories are illustrative demonstration content.
- * They must be replaced with the hotel’s real categories and verified
- * features before launch. No prices or availability are shown.
+ * Replace with the hotel’s real categories and verified features before launch.
+ * No prices or availability are shown by design.
  */
 export const rooms: Room[] = [
   {
@@ -12,30 +12,30 @@ export const rooms: Room[] = [
     index: '01',
     image: IMAGES.roomClassic,
     alt: {
-      fr: 'Chambre lumineuse avec lit double — photographie d’illustration',
-      en: 'Bright room with a double bed — illustrative photograph',
-      ar: 'غرفة مشرقة بسرير مزدوج — صورة توضيحية',
+      fr: 'Chambre de l’Hôtel Basilic avec vue sur mer — photographie officielle',
+      en: 'Hotel Basilic room with sea view — official photograph',
+      ar: 'غرفة فندق بازيليك مع إطلالة على البحر — صورة رسمية',
     },
     name: {
-      fr: 'Chambre Classique',
-      en: 'Classic Room',
-      ar: 'غرفة كلاسيكية',
+      fr: 'Chambre Vue Mer',
+      en: 'Sea View Room',
+      ar: 'غرفة بإطلالة على البحر',
     },
     tagline: {
-      fr: 'La simplicité, avec soin.',
-      en: 'Simplicity, considered.',
-      ar: 'البساطة بعناية.',
+      fr: 'La Méditerranée, à votre réveil.',
+      en: 'The Mediterranean, as you wake.',
+      ar: 'البحر الأبيض المتوسط عند استيقاظك.',
     },
     description: {
-      fr: 'Une chambre accueillante, pensée pour se reposer après une journée passée entre la ville et la mer. Une atmosphère calme, des matières douces et l’essentiel à portée de main.',
-      en: 'A welcoming room designed for rest after a day between the city and the sea. A calm atmosphere, soft materials and the essentials close at hand.',
-      ar: 'غرفة مرحّبة مصممة للراحة بعد يوم بين المدينة والبحر. أجواء هادئة، ومواد ناعمة، وكل ما تحتاجه في متناول اليد.',
+      fr: 'Une chambre chaleureuse et lumineuse, ouverte sur un balcon avec vue sur la baie. Un espace pensé pour profiter du lever de soleil sur Al Hoceima.',
+      en: 'A warm, bright room opening onto a balcony with bay views. A space designed to enjoy the sunrise over Al Hoceima.',
+      ar: 'غرفة دافئة ومشرقة تفتح على شرفة بإطلالة على الخليج. مساحة مصممة للاستمتاع بشروق الشمس على الحسيمة.',
     },
     features: [
-      { fr: 'Lit double', en: 'Double bed', ar: 'سرير مزدوج' },
+      { fr: 'Balcon privé', en: 'Private balcony', ar: 'شرفة خاصة' },
+      { fr: 'Vue mer', en: 'Sea view', ar: 'إطلالة على البحر' },
       { fr: 'Climatisation', en: 'Air conditioning', ar: 'تكييف الهواء' },
       { fr: 'Wi-Fi gratuit', en: 'Free Wi-Fi', ar: 'واي فاي مجاني' },
-      { fr: 'Vue ville', en: 'City view', ar: 'إطلالة على المدينة' },
     ],
   },
   {
@@ -43,27 +43,27 @@ export const rooms: Room[] = [
     index: '02',
     image: IMAGES.roomSuperior,
     alt: {
-      fr: 'Chambre supérieure ouverte sur la mer — photographie d’illustration',
-      en: 'Superior room opening onto the sea — illustrative photograph',
-      ar: 'غرفة فاخرة تطل على البحر — صورة توضيحية',
+      fr: 'Chambre supérieure — photographie d’illustration',
+      en: 'Superior room — illustrative photograph',
+      ar: 'غرفة فاخرة — صورة توضيحية',
     },
     name: {
-      fr: 'Chambre Supérieure — Vue Mer',
-      en: 'Superior Room — Sea View',
-      ar: 'غرفة فاخرة — إطلالة على البحر',
+      fr: 'Chambre Supérieure',
+      en: 'Superior Room',
+      ar: 'غرفة فاخرة',
     },
     tagline: {
-      fr: 'La mer comme horizon.',
-      en: 'The sea as your horizon.',
-      ar: 'البحر في الأفق.',
+      fr: 'Le confort, en toute simplicité.',
+      en: 'Comfort, made simple.',
+      ar: 'الراحة بكل بساطة.',
     },
     description: {
-      fr: 'Une chambre plus généreuse, tournée vers la lumière et la Méditerranée. Le matin s’ouvre sur l’horizon, le soir invite à la contemplation.',
-      en: 'A more generous room turned toward the light and the Mediterranean. Morning opens onto the horizon; evening invites contemplation.',
-      ar: 'غرفة أرحب تتجه نحو الضوء والبحر الأبيض المتوسط. يفتح الصباح على الأفق، ويدعو المساء إلى التأمل.',
+      fr: 'Une chambre plus généreuse, tournée vers la lumière et la ville. Le matin s’ouvre sur l’horizon, le soir invite à la contemplation.',
+      en: 'A more generous room turned toward the light and the city. Morning opens onto the horizon; evening invites contemplation.',
+      ar: 'غرفة أرحب تتجه نحو الضوء والمدينة. يفتح الصباح على الأفق، ويدعو المساء إلى التأمل.',
     },
     features: [
-      { fr: 'Vue mer', en: 'Sea view', ar: 'إطلالة على البحر' },
+      { fr: 'Lit double', en: 'Double bed', ar: 'سرير مزدوج' },
       { fr: 'Climatisation', en: 'Air conditioning', ar: 'تكييف الهواء' },
       { fr: 'Wi-Fi gratuit', en: 'Free Wi-Fi', ar: 'واي فاي مجاني' },
       { fr: 'Chambre non-fumeurs', en: 'Non-smoking room', ar: 'غرفة لغير المدخنين' },
