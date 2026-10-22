@@ -1,4 +1,4 @@
-﻿export const hotel = {
+export const hotel = {
   name: 'Hotel Basilic',
   street: '131 Avenue Abdelkrim El Khattabi',
   city: 'Al Hoceima',

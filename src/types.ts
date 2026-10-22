@@ -1,4 +1,4 @@
-﻿export type Locale = 'fr' | 'en' | 'ar';
+export type Locale = 'fr' | 'en' | 'ar';
 export type Localized = Record<Locale, string>;
 
 export type Room = {

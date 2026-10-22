@@ -1,31 +1,31 @@
-﻿import type { DiningSpace } from '../types';
+import type { DiningSpace } from '../types';
 
 export const diningSpaces: DiningSpace[] = [
   {
     id: 'restaurant',
-    name: { fr: 'Restaurant', en: 'Restaurant', ar: 'Ø§Ù„Ù…Ø·Ø¹Ù…' },
+    name: { fr: 'Restaurant', en: 'Restaurant', ar: 'المطعم' },
     text: {
-      fr: 'Une table conviviale pour dÃ©couvrir les saveurs de la rÃ©gion, du dÃ©jeuner au dÃ®ner.',
+      fr: 'Une table conviviale pour découvrir les saveurs de la région, du déjeuner au dîner.',
       en: 'A convivial table for discovering regional flavours, from lunch to dinner.',
-      ar: 'Ù…Ø§Ø¦Ø¯Ø© Ø¯Ø§ÙØ¦Ø© Ù„Ø§ÙƒØªØ´Ø§Ù Ù†ÙƒÙ‡Ø§Øª Ø§Ù„Ù…Ù†Ø·Ù‚Ø©ØŒ Ù…Ù† Ø§Ù„ØºØ¯Ø§Ø¡ Ø¥Ù„Ù‰ Ø§Ù„Ø¹Ø´Ø§Ø¡.',
+      ar: 'مائدة دافئة لاكتشاف نكهات المنطقة، من الغداء إلى العشاء.',
     },
   },
   {
     id: 'cafe',
-    name: { fr: 'CafÃ© & PÃ¢tisserie', en: 'CafÃ© & PÃ¢tisserie', ar: 'Ø§Ù„Ù…Ù‚Ù‡Ù‰ ÙˆØ§Ù„Ø­Ù„ÙˆÙŠØ§Øª' },
+    name: { fr: 'Café & Pâtisserie', en: 'Café & Pâtisserie', ar: 'المقهى والحلويات' },
     text: {
-      fr: 'Un moment suspendu autour dâ€™un cafÃ©, dâ€™une douceur et de la vie de la ville.',
+      fr: 'Un moment suspendu autour d’un café, d’une douceur et de la vie de la ville.',
       en: 'A suspended moment over coffee, something sweet and the life of the city.',
-      ar: 'Ù„Ø­Ø¸Ø© Ù‡Ø§Ø¯Ø¦Ø© Ø­ÙˆÙ„ ÙÙ†Ø¬Ø§Ù† Ù‚Ù‡ÙˆØ© ÙˆØ­Ù„ÙˆÙ‰ ÙˆØ£Ø¬ÙˆØ§Ø¡ Ø§Ù„Ù…Ø¯ÙŠÙ†Ø©.',
+      ar: 'لحظة هادئة حول فنجان قهوة وحلوى وأجواء المدينة.',
     },
   },
   {
     id: 'terrasse',
-    name: { fr: 'Terrasse panoramique', en: 'Panoramic terrace', ar: 'Ø§Ù„Ø´Ø±ÙØ© Ø§Ù„Ø¨Ø§Ù†ÙˆØ±Ø§Ù…ÙŠØ©' },
+    name: { fr: 'Terrasse panoramique', en: 'Panoramic terrace', ar: 'الشرفة البانورامية' },
     text: {
-      fr: 'Prendre de la hauteur, regarder la ville sâ€™Ã©tendre et la mer devenir horizon.',
+      fr: 'Prendre de la hauteur, regarder la ville s’étendre et la mer devenir horizon.',
       en: 'Rise above the city, watch it unfold and let the sea become the horizon.',
-      ar: 'Ø§Ù„Ø§Ø±ØªÙØ§Ø¹ Ù‚Ù„ÙŠÙ„Ø§Ù‹ØŒ ÙˆÙ…Ø´Ø§Ù‡Ø¯Ø© Ø§Ù„Ù…Ø¯ÙŠÙ†Ø© ØªÙ…ØªØ¯ ÙˆØ§Ù„Ø¨Ø­Ø± ÙŠØµØ¨Ø­ Ø£ÙÙ‚Ø§Ù‹.',
+      ar: 'الارتفاع قليلاً، ومشاهدة المدينة تمتد والبحر يصبح أفقاً.',
     },
   },
 ];

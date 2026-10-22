@@ -1,4 +1,4 @@
-﻿import type { Room } from '../types';
+import type { Room } from '../types';
 import { IMAGES } from './images';
 
 /**

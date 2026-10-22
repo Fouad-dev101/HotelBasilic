@@ -73,7 +73,7 @@ export default function Navbar() {
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
-  useLockBodyScroll();
+  useLockBodyScroll(open);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48);

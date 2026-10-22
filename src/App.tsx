@@ -1,4 +1,4 @@
-﻿import { useLanguage } from './i18n/LanguageContext';
+import { useLanguage } from './i18n/LanguageContext';
 import { useRevealOnScroll } from './hooks/useRevealOnScroll';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';

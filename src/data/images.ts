@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Centralised image configuration.
  *
  * IMPORTANT: every photograph below is illustrative demo imagery sourced

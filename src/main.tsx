@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { LanguageProvider } from './i18n/LanguageContext';
 import { BookingProvider } from './context/BookingContext';

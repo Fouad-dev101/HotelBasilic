@@ -1,4 +1,4 @@
-﻿import type { Amenity } from '../types';
+import type { Amenity } from '../types';
 
 /**
  * Only amenities supported by public listings are shown.

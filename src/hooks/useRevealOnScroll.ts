@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 /**
  * Adds `.is-visible` to every `.reveal` / `.reveal-img` element when it
